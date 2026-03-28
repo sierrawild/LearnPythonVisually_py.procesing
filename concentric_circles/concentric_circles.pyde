@@ -4,10 +4,6 @@ noFill()
 stroke('#ffffff')
 strokeWeight(3)
 
-i = 0
-while i < 40:
-    circle(width/2 + i*6, height/2, i * 30)
-    i += 1
     
-for i in range(40):
+for i in range(10,40, 5):
     circle(width/2 - i*6, height/2, i * 30)
