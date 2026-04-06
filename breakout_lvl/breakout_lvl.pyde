@@ -32,6 +32,17 @@ translate(0,bh)
 for row in bricks:
     for col, brick in enumerate(row):
         if len(brick):
-            # fill(brick[0][0][0])
-            rect(0,0,bw,bh)
+            
             x = col * bw
+            fill(brick[0])
+            rect(x, 0, bw, bh)
+    
+            if brick[1] == 2:
+                stroke('#FFFFFF')
+                strokeWeight(3)
+                line(x+5, 5, x+bw-7, 5)
+                line(x+5, 5, x+5, bh-7)
+                noStroke()
+
+    translate(0, bh)
+            
