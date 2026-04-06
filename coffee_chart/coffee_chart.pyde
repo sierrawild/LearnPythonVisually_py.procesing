@@ -16,6 +16,7 @@ for coffee in coffees:
     for i in coffee['ingredients']:
         fill(i['color'])
         pushMatrix()
+        noStroke()
         translate(0,y_offset)
         rect(0, - i['quantity'], mug, i['quantity'])
         y_offset -= i['quantity']
